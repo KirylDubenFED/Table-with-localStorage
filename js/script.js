@@ -85,5 +85,17 @@ for (let el of data) {
 $table.innerHTML = str;
 
 
-if(!localStorage.length) {}
+const table = document.querySelector('table')
 
+if(!localStorage.length) {
+    let str = ''
+    data.forEach(el => str+=`<tr><td> ${el.firstName}</td><td>${el.lastName}</td><td>${el.age}</td><td>${el.gender}</td><td>${el.work}</td></tr>`)
+    div.innerHTML = str
+    localStorage.setItem('users', JSON.stringify(data))
+}
+
+else {
+    let str = ''
+    JSON.parse(localStorage.getItem('users')).forEach(el => str+=`<tr><td> ${el.firstName}</td><td>${el.lastName}</td><td>${el.age}</td><td>${el.gender}</td><td>${el.work}</td></tr>`)
+    $table.innerHTML = str
+}
