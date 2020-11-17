@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <table border="1" cellpadding="5" cellspacing="0" bgcolor="khaki">
+        <thead>
+          <tr>
+            <th bgcolor="coral">First Name</th>
+            <th bgcolor="coral">Last Name</th>
+            <th bgcolor="coral">Age</th>
+            <th bgcolor="coral">Gender</th>
+            <th bgcolor="coral">Work</th>
+          </tr>
+        </thead>
+        <tbody  class='table'>
+        </tbody>
+      </table>
+
+
+
+    <div class="modal">
+        <!-- В стилях display.none, удалите, чтобы увидеть -->
+        <div class="popap">
+            <div class="popap-head">
+                <div class="close">X</div>
+            </div>
+            <div class="popap-main">
+                <form class="popap-form">
+                    <label>
+                        <span>First Name</span>
+                        <input id="first_name" type="text" name="first-name">
+                    </label>
+                    <label>
+                        <span>Last Name</span>
+                        <input id="last_name" type="text" name="last-name">
+                    </label>
+                    <label>
+                        <span>Age</span>
+                        <input id="age" type="text" name="age">
+                    </label>
+                    <label>
+                        <span>Gender</span>
+                        <input id="gender" type="text" name="gender">
+                    </label>
+                    <label>
+                        <span>Work</span>
+                        <input id="work" type="text" name="work">
+                    </label>
+                </form>
+                <div class="popap-btn">
+                    <div class="btn close">close</div>
+                    <div class="btn ok">ok</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="btn add-user">add user</div>
+
+
+    <script type="module" src="js/script.js"></script>
+</body>
+
+</html>
