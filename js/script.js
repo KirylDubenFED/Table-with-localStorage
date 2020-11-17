@@ -33,9 +33,6 @@ $ok.addEventListener('click', function () {
 	modal.toggle('close');
 });
 
-
-
-
 $open.addEventListener('click', function () {
 	modal.toggle('open');
 });
@@ -86,3 +83,7 @@ for (let el of data) {
 	//  console.log (el)
 }
 $table.innerHTML = str;
+
+
+if(!localStorage.length) {}
+
