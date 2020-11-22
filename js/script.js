@@ -80,7 +80,6 @@ let data = [
 let str = '';
 for (let el of data) {
 	str += `<tr><td> ${el.firstName}</td><td>${el.lastName}</td><td>${el.age}</td><td>${el.gender}</td><td>${el.work}</td></tr>`;
-	//  console.log (el)
 }
 $table.innerHTML = str;
 
